@@ -58,6 +58,9 @@ jobs:
       - name: Print env variable
         run: echo "${{ env.item }}"
         
+      - name: Foo Bar
+        uses: actions/checkout@master
+        
       - name: Download jar
         uses: actions/download-artifact@v2.1.0
         with:
