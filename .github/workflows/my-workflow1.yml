@@ -32,7 +32,13 @@ jobs:
           java-version: '11'
           
       - name: maven build
-        run: mvn clean install
+        run: mvn -Djar.finalName=try-action.jar clean install
         
       - name: where am i
         run: pwd
+        
+      - name: Upload jar
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          name: actions-1.0-SNAPSHOT.jar
+          path: ./target/try-action.jar
