@@ -33,3 +33,6 @@ jobs:
           
       - name: maven build
         run: mvn clean install
+        
+      - name: where am i
+        run: pwd
