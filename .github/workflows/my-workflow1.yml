@@ -51,3 +51,15 @@ jobs:
         with:
           name: actions-1.0-SNAPSHOT.jar
           path: ./target/actions-1.0-SNAPSHOT.jar
+          
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print env variable
+        run: echo "${{ env.item }}"
+        
+      - name: Download jar
+        uses: actions/download-artifact@v2.1.0
+        with:
+          name: actions-1.0-SNAPSHOT.jar
+    
