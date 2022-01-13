@@ -4,9 +4,9 @@ on:
     branches:
       - feature/*
       - master
-      - pre-release-branch/*
+#      - pre-release-branch/*
     tags:
-      - v*
+      - v1
 
 
 jobs:
