@@ -5,7 +5,7 @@ on:
       - feature/*
       - main
     tags:
-      - '*'
+      - v*
 
 
 jobs:
