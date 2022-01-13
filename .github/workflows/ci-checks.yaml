@@ -5,6 +5,9 @@ on:
       - feature/*
       - master
       - pre-release-branch/*
+    tags:
+      - v*
+
 
 jobs:
   build:
