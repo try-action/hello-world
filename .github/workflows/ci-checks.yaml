@@ -3,7 +3,10 @@ on:
   push:
     branches:
       - feature/*
-      - master
+      - main
+    tags:
+      - '*'
+
 
 jobs:
   build:
