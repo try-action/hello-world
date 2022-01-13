@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - feature/*
-      - master
+      - main
 #      - pre-release-branch/*
     tags:
       - v1
